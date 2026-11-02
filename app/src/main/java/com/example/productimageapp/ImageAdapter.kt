@@ -25,6 +25,7 @@ class ImageAdapter(
             placeholder(android.R.drawable.ic_menu_gallery)
             error(android.R.drawable.ic_dialog_alert)
             size(Size.ORIGINAL)
+            listener(MetricListener(item.id)) // chi de do, khong anh huong hieu nang dang ke
         }
         holder.b.root.setOnClickListener { onClick(item) }
     }
